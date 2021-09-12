@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Абсолютное позиционирование</title>
+  <style type="text/css">
+  
+  
+   body { 
+        background: url(http://bgfons.com/upload/paint_texture2104.jpg) no-repeat;
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 600%; 
+		overflow: auto;
+		
+    }
+  
+   
+   #sidebar, #content { overflow: auto; padding: 10px; }
+   
+
+   #header {
+    height: 180px; /* Высота слоя */
+    background: #FEDFC0; border-bottom: 2px solid #7B5427;
+   }
+   
+   
+   #hr1 {
+    border: none; /* Убираем границу */
+    background-color:black ; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+   
+   #header h1 { padding: 20px; margin: 0; }
+   
+   
+   #sidebar { 
+    width: 150px; background: #ECF5E4; border-right: 1px solid #231F20;
+    top: 82px; /* Расстояние от верхнего края */ 
+    bottom: 0; /* Расстояние снизу  */
+   }
+   #content {
+    top: 82px; /* Расстояние от верхнего края */
+    left: 170px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+  }
+  
+     #content2 { 
+        position: static;
+        background: #ffffff;
+        width: 900px;
+       
+
+        margin-top: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+		 margin: 0 auto;
+        outline: 2px solid #000;
+
+        overflow: auto;
+    }
+  #sidebar1 {
+  
+		border-left:2px solid #000;
+        margin-top: 83px;
+        overflow: auto; 
+
+        width: 300px; 
+        height: 650px;
+
+        float: right;
+
+        background: #ffffff; 
+
+        top: 100px; 
+        bottom: 0; 
+    }
+  
+  </style>
+ </head>
+ <body>
+ 
+ 
+
+ 
+ <div id="content2"> 
+ 
+  
+ 
+  <div id="header"><h1> <center>  Лабораторна 1 <br>   Використання рекурсії для організації повторювальних процесів <br> Варіант 8   </center> </h1>
+   </div>
+  
+  <div id="content">
+   <h2>  <center> Виконавець  </center>  </h2>
+   <p>
+   
+   <table>
+        <tr><td> Посада: </td> <td>  Студент  </td></tr>
+		  <tr><td> Курс: </td> <td>  IV  </td></tr>
+	    <tr><td> Група:   </td> <td>      ІПЗ-42 </td></tr>
+		<tr><td>  ПІБ:    </td> <td>       Іваненко А.Ю </td></tr>
+		<tr><td> Рік навчання: </td> <td> 2021-2022 </td></tr>
+	</table>
+
+	
+   <hr id ="hr1">   
+   <h2>  <center> Мета  </center>  </h2>
+   
+   Сформувати декларативне мислення в галузі програмування завдяки використанню чистих функцій, 
+   рекурсій замість циклів, запобіганню даних, що змінюються. Опанувати застосування рекурсивних функцій для обчислювальних процесів.
+    <hr id ="hr1">  
+   
+       
+   <h2>  <center>  Умови задач </center>  </h2>
+   
+  <center> <h3> Задача 1 </h3> <br></center>
+   Ввести з клавіатури два цілих додатних числа   a   та   b. Обчислити добуток двох цілих додатних чисел за рекурентним співвідношенням <br>
+     <br>
+	 <img src="form_1_1.png" width="250" class="round">
+	 
+   
+ <center>  <h3> Задача 2 </h3> <br></center>
+   Увести з клавіатури два натуральних числа   k   та   s. Визначити кількість k-значних 
+   натуральних чисел, сума цифр яких дорівнює   s. Запис натурального числа не може починатися з цифри 0. В цьому завданні
+   можна використовувати цикл для перебору всіх цифр, що стоять на будь-якій позиції. Контрольний тест: введені числа 3 15, отриманий результат: 69.
+  
+    <hr id ="hr1">  
+
+	
+   <h2>  <center> Структура програми  </center>  </h2>
+   
+   <center>  <h3> Схема задачі 1 </h3> <br></center>
+   
+   <center><img src="sheam_1_1.png" width="500" class="round"></center> <br>
+
+	<center>  <h3> Схема задачі 2 </h3> <br></center>
+   
+      <center><img src="sheam_1_2.png" width="700" class="round"></center> 
+   
+    <hr id ="hr1">  
+   
+      <h2>  <center> Обгрунтування вибору середовища та мови функціонального програмування  </center>  </h2>
+   
+   	<pre>
+ Online Clisp IDE https://www.jdoodle.com/execute-clisp-online/ 
+ Середовище вибране через: 
+	a) -   Легкий зрозумілий інтерфес
+	b) -	Не потрібно нічого  встановлювати на комп'ютер.
+ Мова Sheme вибрана через:
+	а) - Лекції ведуться на цій мові.
+	b) - Простий синтаксис.
+	
+  </pre>
+   <hr id ="hr1">  
+   
+      <h2>  <center>Код програми з коментарями   </center>  </h2>
+	  <h3>  <center>Код програми 1   </center>  </h3>
+	  <pre>
+	  
+	  
+	  
+	  
+	  
+(define (p/r ) ; читання з консолі
+    (string->number (read-line)))
+
+(define (f1 a b); об'явлення зовнішньої функції 
+  (define (f2 a b acc); об'явлення внутрішньої функції
+    (if (= b 1) ; перевірка умови
+         ( + acc a );  додати до загальної суми а
+         (if (= a 1);
+            (+ acc b);додати до загальної суми в
+            (if (= (* a b) 0);
+            acc; повернути загальну відповідь
+        (f2 a (- b 1) (+ acc a) ))))); стрибнути в наступну ітерацію рекурсії
+  (if (< b 0); перевірка на коректність даних
+      (display "Невірний параметр!");
+      (f2 a b 0)))
+( display (f1 (p/r) (p/r))); запуск функції
+	  </pre>
+	 	 
+	  
+	<h3>  <center>Код програми 2     </center>  </h3>
+	  <pre>
+	  
+(define (p/r ); ввід
+    (string->number (read-line)))
+
+(define (f1 k s); зовнішня функція
+    
+    (define ( f2 k s n acc ); внутрішня функція
+        (if ( or (<(* k 9) s) (< s 0) );первірка на можливість 
+            acc 
+            (if ( = k 1); перевірка на останій розряд  
+                (+ acc 1)
+                (if (= n 10); перевірка на переповнення одного розряду
+                    acc
+                   (f2 k s (+ n 1)  (f2 (- k 1) (- s n) 0 acc )      )  ;рекурсивний виклик функції
+                    ))
+            )
+        )
+  (if (< (* k 9) s)
+            0             
+      ( f2  k  s 1 0)))
+( display (f1 (p/r) (p/r)))
+	  </pre>
+	  
+	  <hr id ="hr1">  
+   
+      <h2>  <center> Посилання на проект з вихідним кодом  </center>  </h2>
+	  
+	  <center> <a  href="https://github.com/Andrey0277/FP_IPZ_42/tree/main"> посилання на гітхаб </a></center> 
+	  
+	  
+	  
+	  <hr id ="hr1">  
+   
+      <h2>  <center> Скрішоти результаів </center>  </h2>
+	     <center> <h3>  програма 1 </h3> </center>
+		 
+		 <center><img src="rez1_1.png" width="700" class="round"></center> 
+		 <br>
+		 <center><img src="rez1_2.png" width="700" class="round"></center> 
+		 
+		 <br>
+		  <center> <h3>  програма 2 </h3> </center>
+	  <center><img src="rez2_1.png" width="700" class="round"></center> 
+	 <br>
+	 <hr id ="hr1">  
+	 
+	  <h2>  <center> Аналіз достовірності результатів </center>  </h2>
+	 
+	   <h3> Перша завдання є реалізування множення через рекурсію. Як можна помітити результати тестів співпадають з очікуваними значеннями </h3> <br>
+	  <h3> В другій задачі було протестовано даний приклад, і алгоритм вивів очікуваний результат </h3> <br>
+	  <hr id ="hr1">  
+	 
+	  <h2>  <center> Висновки </center>  </h2>
+	  В результаті роботи було вирішено дві заданні програмні задачі за допомогою мови Shema.<br>
+	  Перша задача була вирішена за допомогою хвостової рекурсії.<br>
+	  Друга задача була вирішена за допомогою звичайної рекурсії.
+	 
+  </div>
+ </body>
+
+</div>
+</html>

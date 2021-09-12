@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Абсолютное позиционирование</title>
+  <style type="text/css">
+  
+  
+   body { 
+        background: url(http://bgfons.com/upload/paint_texture2104.jpg) no-repeat;
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 100%; 
+		
+		
+    }
+  
+   
+   #sidebar, #content { overflow: auto; padding: 10px; }
+   
+
+   #header {
+    height: 80px; /* Высота слоя */
+    background: #FEDFC0; border-bottom: 2px solid #7B5427;
+   }
+   
+   
+   #hr1 {
+    border: none; /* Убираем границу */
+    background-color:black ; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+   
+   #header h1 { padding: 20px; margin: 0; }
+   
+   
+   #sidebar { 
+    width: 150px; background: #ECF5E4; border-right: 1px solid #231F20;
+    top: 82px; /* Расстояние от верхнего края */ 
+    bottom: 0; /* Расстояние снизу  */
+   }
+   #content {
+    top: 82px; /* Расстояние от верхнего края */
+    left: 170px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+  }
+  
+     #content2 { 
+        position: static;
+        background: #ffffff;
+        width: 900px;
+       
+
+        margin-top: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+		 margin: 0 auto;
+        outline: 2px solid #000;
+
+        overflow: auto;
+    }
+  #sidebar1 {
+  
+		border-left:2px solid #000;
+        margin-top: 83px;
+        overflow: auto; 
+
+        width: 300px; 
+        height: 650px;
+
+        float: right;
+
+        background: #ffffff; 
+
+        top: 100px; 
+        bottom: 0; 
+    }
+  
+  </style>
+ </head>
+ <body>
+ 
+ 
+
+ 
+ <div id="content2"> 
+ 
+  <div id="sidebar1">
+  <center>
+   <a href="lab1/lab0.html"><p>Лабораторна 1  </p></a>
+   <hr id ="hr1">
+	<a href="error.html"><p>Лабораторна 2  </p></a>
+   <hr id ="hr1">
+   <a href="error.html"><p>Лабораторна 3  </p></a>
+   <hr id ="hr1">
+   <a href="error.html"><p>Лабораторна 4  </p></a>
+   <hr id ="hr1">
+	<a href="error.html"><p>Лабораторна 5  </p></a>
+   <hr id ="hr1">
+	<a href="error.html"><p>Лабораторна 6  </p></a>
+   <hr id ="hr1">
+	<a href="error.html"><p>Лабораторна 7  </p></a>
+   <hr id ="hr1">
+	<a href="error.html"><p>Лабораторна 8  </p></a>
+    <hr id ="hr1">
+	
+	
+	
+	
+	
+	
+   </center>
+  </div>
+ 
+  <div id="header"><h1> <center>  Функціональне програмування </center> </h1></div>
+  
+  <div id="content">
+   <h2>  <center>  Інформація про автора </center>  </h2>
+   <p>
+   
+   <table>
+        <tr><td> Посада: </td> <td>  Студент  </td></tr>
+		  <tr><td> Курс: </td> <td>  IV  </td></tr>
+	    <tr><td> Група:   </td> <td>      ІПЗ-42 </td></tr>
+		<tr><td>  ПІБ:    </td> <td>       Іваненко А.Ю </td></tr>
+		<tr><td> Рік навчання: </td> <td> 2021-2022 </td></tr>
+	</table>	
+   <hr id ="hr1">
+   
+    <h2>  <center> Інформація про викладача, що проводить лабораторні заняття </center>  </h2>
+	
+   <br>
+ 
+   
+   
+   
+   
+    <table>
+  <tr><td> Посада:  </td> <td>       Асистент кафедри програмних систем і технологій </td></tr>
+  <tr><td> Науковий ступінь:      </td> <td>         Кандидат технічних наук </td></tr>
+  <tr><td> ПІБ:  </td> <td>  Іваницька А.Ю </td></tr>
+  <tr><td> Індекс Гірша у Google Scholar:</td> <td>  2   </td></tr>
+   </table>
+   
+   <hr id ="hr1">
+   
+    <h2>  <center> Інформація про місце навчання автора </center>  </h2>
+	
+   <center>
+   <br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEUzMzP////MzMy/AAAsLCyWlpacnJzOzs7y8vL6+vqvr6/g4OB6enqSkpIvLy/X19e+vr5vb28kODgwNDTN3Ny+AADLv79pISHFV1e4AwN7e3taWlqvAAAnJye8vLxhYWFYRkaHh4fp6elILCyaDw9MTEw+Pj6Dg4OioqLHAABDQ0NsbGwhISFsdnY7MTF/cXFZJiaeDw+uYWFkIiK0VFS7sLC9yspQSUnjSYE7AAACqElEQVR4nO3d21abQBSAYcyBScgQwFRbEwMFc1R7sCff/82aGl3etWv2pGzA/7/Pgi+z4Ia9ZoKzrhdo38B/D2H7exKaYdjkospbOLwfNLjlOh2NPYXhIGhy611SyYnHNWy28HYeJd0WborQjDotDBZDhAgRaocQIUL9ECJEqB9ChAj1Q4gQoX4IESLUDyFChPohRIhQP4QIpcJpXXV+Daebu1hBePhjs5q6y7ahqUZj1zyFg802ras8T3uJc9WzUS6M3S8qzfQEJZPjrJhcWPZEF66tKJ34Ck2ThSYtd8fXU3eFNu51XJiVXRdahAgRKocQIUL9ECJEqB9ChAj1Q4gQoX4IESLUDyFChPohRIhQv5MIGz2pcArhn2kT41ybhNu05z78I7tbyY+8v+NPg4Wdu2ZtKDGmO8FOXcPMcxbjYFw6d7/M0sRdGBXrReFcFvrN0xyEgl27REITFYXdlq6Fud9MlKhpIBNmdpe7P/LPG4S1QmjLdFI5N/KbTaxXGBvxeGl7hGfSECJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiFBHOG2VcHYu6FOLhLPPN4K+iOZpVISz86+rh5VjD6tvl4IRLi3h+4v9vu/Y/sPlO4lQY7+2J6ErsN+XCedKwitn4YVIaN6CUOk5rE+o9aZBiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIEb5FIbMYCBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBGeUhgvJULpDjzOJwqeYGIo3Gzchd+vr66d+/HzV+5auvNfwyovi7Vrjx8FPS4kvRyDJxeOkqi0TS2zNo6S8b8gfxeOK5NHDS41lafwQJw0uZdj8DyEB2Ojk/tehd0NYfvrvvA3rHj5AU0JA/YAAAAASUVORK5CYII=" width="70" class="round">
+   </center>
+   
+   <table>
+        <tr><td> Назва ВНЗ: </td> <td> КНУ и́мени Тара́са Шевче́нко </td></tr>
+	    <tr><td> Факультет:   </td> <td>   Факультет інформаційних технологій </td></tr>
+		 <tr><td> Кафедра:   </td> <td>   Програмних систем  і технологій </td></tr>
+		
+	</table>	
+   
+   
+  </div>
+ </body>
+
+</div>
+</html>
