@@ -1,0 +1,15 @@
+
+( define (f1 a b n f   ); зовнішня функція
+  (define (f2 t h b f acc)
+      (if (>=  t b)
+          acc
+      (f2 (+ t h) h b f (+ acc (f t)))      
+          )
+      )
+  
+  
+  (*(/(- b a) n) (f2 a (/ (- b a)n) b f 0 ))
+    )
+
+(display( f1 0 3.14 500 ( lambda ( x )( cos (- x (sin x ) ) ))    )); виклик функції
+(newline);(cos (- x (sin x ) ) )
